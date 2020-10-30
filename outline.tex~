@@ -1,0 +1,23 @@
+OAS preliminary report
+
+* Contents
+- Redistricting contentious issue. Claim about its impact, eg. economist or NYT. 
+- Truth is that strategic manipulation of electoral boundaries has been present since the foundation of the USA. Gerrymandering refers to 1810 governnor.
+- Redistricting every decade to approximate ideal of one-person-one-vote after census reveals demographic imbalances between the 50 states.
+- The process in the US is politicized: Congress apportions, then state legislatures have the authority to enact a district map through legislation. That is, elected officials participate directly in the process. 
+- Another model, used in a handful of states, is to delegate the redistricting process to an independent commission. 
+- Implications of legislation: governor also intervenes, can veto the proposal. Courts too.
+- 10 states with independent redistricting: Alaska, Arizona, California, Colorado, Hawaii, Idaho, Michigan, Missouri, Montana, Washington. Years adopted?
+- Get %v and %s for house 2012:2018 at state level. Plot w 45o line.
+  - Available from wikipedia, with yr-by-yr scraping
+  - pdfs here https://history.house.gov/Institution/Election-Statistics/
+  - got data from fec
+  
+* Challenges
+- How does ``observation'' work?
+- Who should I interview? US or abroad too?
+- Legal challenges?
+
+* Sources
+- Cox+Katz, Engstrom, Tokaji, Grofman, Shugart.
+- Ballotpedia

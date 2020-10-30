@@ -1,0 +1,81 @@
+OAS preliminary report
+
+* Contents
+- Redistricting contentious issue. Claim about its impact, eg. economist or NYT. 
+- Truth is that strategic manipulation of electoral boundaries has been present since the foundation of the USA. Gerrymandering refers to 1810 governnor.
+- Redistricting every decade to approximate ideal of one-person-one-vote after census reveals demographic imbalances between the 50 states.
+- The process in the US is politicized: Congress apportions, then state legislatures have the authority to enact a district map through legislation. That is, elected officials participate directly in the process. 
+- Another model, used in a handful of states, is to delegate the redistricting process to an independent commission. 
+- Implications of legislation: governor also intervenes, can veto the proposal. Courts too.
+- 10 states with independent redistricting: Alaska, Arizona, California, Colorado, Hawaii, Idaho, Michigan, Missouri, Montana, Washington. Years adopted?
+- Get %v and %s for house 2012:2018 at state level. Plot w 45o line.
+  - Available from wikipedia, with yr-by-yr scraping
+  - pdfs here https://history.house.gov/Institution/Election-Statistics/
+  - got data from fec
+
+
+|               | politicized  | independent commission |
+|---------------+--------------+------------------------|
+| decentralized | 34 US states | 9 US states            |
+|               |              | 10 Canadian provinces  |
+|---------------+--------------+------------------------|
+| centralized   | France 2001  | Australia, Mexico, UK  |
+|---------------+--------------+------------------------|
+
+
+
+| Congressional redisticting process                      | States                                          |
+|---------------------------------------------------------+-------------------------------------------------|
+| No redistricting (elects one House Representative only) | Alaska, Delaware, Montana, North Dakota, South Dakota, Vermont, and Wyoming. |
+|                                                         |                                                 |
+| Politicized (process follows the legislative process)   | Alabama, Arkansas, Connecticut, Florida, Georgia, Iowa, Illinois, Indiana, Kansas, Kentucky, Louisiana, Massachusetts, Maryland, Maine, Mississippi, North Carolina, Nebraska, New Hampshire, New Jersey, New Mexico, Nevada, New York, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Virginia, Wisconsin, and West Virginia.
+|                                                         | 
+| Independent commission                                  | Arizona, California, Colorado, Hawaii, Idaho, Michigan, Missouri, Minnesota, and Washington.
+|---------------------------------------------------------+-------------------------------------------------|
+Abbreviations: AK--Alaska; AL--Alabama; AR--Arkansas; AZ--Arizona; CA--California; CO--Colorado; CT: Connecticut; DE--Delaware; FL--Florida; GA--Georgia; HI--Hawaii; IA--Iowa; ID--Idaho; IL--Illinois; IN--Indiana; KS--Kansas; KY--Kentucky; LA--Louisiana; MA--Massachusetts; MD--Maryland; ME--Maine; MI--Michigan; MN: Minnesota; MO--Missouri; MS--Mississippi; MT--Montana; NC--North Carolina; ND--North Dakota; NE--Nebraska; NH--New Hampshire; NJ--New Jersey; NM--New Mexico; NV--Nevada; NY--New York; OH--Ohio; OK--Oklahoma; OR--Oregon; PA--Pennsylvania; RI--Rhode Island; SC--South Carolina; SD--South Dakota; TN--Tennessee; TX: Texas; UT--Utah; VA--Virginia; VT--Vermont; WA--Washington; WI--Wisconsin; WV--West Virginia; WY--Wyoming.
+Prepared with data from Ballotpedia and FEC. 
+
+ 
+
+
+
+
+
+
+- Comparative cases: SMDs, FTPT, and federal
+  - Canada*
+  - India*
+  - Caribbean
+- Comparative cases: SMDs, other ES, and federal
+  - Australia* (AV)
+  - Germany (MMP)
+  - Mexico* (MMP)
+- Comparative cases: SMDs, other ES, and unitary
+  - New Zealand* (MMP)
+- Comparative cases: SMDs, majority/plurality, unitary
+  - France*
+  - Caribbean
+  - UK*
+
+* Stakeholders
+- I received a last-minute invitation to join the OAS EOM US2020. My task is to produce a report on electoral boundaries, a theme that was absent from the 2016 study. 
+- Even if these missions are much constrained in the scope of the recommendations they are willing to make, I believe this is an opportunity to present some of the challenges and possibilities. 
+- I would like to schedule a short interview to discuss 
+
+
+* Challenges
+- How does ``observation'' work?
+- Who should I interview? US or abroad too?
+- Legal challenges?
+
+* Sources
+- Cox+Katz, Engstrom, Tokaji, Grofman, Shugart.
+- Ballotpedia
+- [[https://en.wikipedia.org/wiki/2020_United_States_redistricting_cycle][2020 REDISTRICTING CYCLE WIKIPEDIA]]
+- [[https://redistricting.lls.edu/mywork.php][Redistricting encyclopedia Loyola]]
+- [[https://gis.harvard.edu/event/2019-cga-conference-redistricting][Harvard conference on redistricting 2019]]
+
+* Possible advocates of community inclusion
+- Allison Riggs -- Southern Coalition for Social Justice
+- Rebecca Theobald -- Colorado Geographic Alliance, Univ Colorado @ Colorado Springs
+
