@@ -73,3 +73,75 @@ text(95, -25, labels = "seats", cex = .75)
 round(table(d$S)/4)
 d$st[which(d$S==29)]
 d$yr[which(d$S==29)]
+
+###################
+## end vote seat ##
+###################
+
+
+###############################
+## turnout in pres elections ##
+###############################
+
+setwd("/home/eric/Dropbox/mydocs/consulting/oas-us2020/data/")
+
+d <- read.csv(file = "turnout-pres-1828-on.csv", stringsAsFactors = FALSE)
+
+# drop before 1920
+d <- d[d$yr>=1920,]
+R <- nrow(d)
+tail(d)
+
+
+#pdf("../plots/turnout20-20.pdf", height = 5, width = 7)
+#png("../plots/turnout20-20.png", height = 350, width = 480)
+clr <- "brown"
+plot(d$yr, c(rep(45,(R-1)),75),  type="n", xlab = "", ylab = "Participation as % voting-eligible population", main = "Turnout in presidential races")
+abline(h = seq(0,100,5), col = "gray")
+lines(d$yr[-R], d$pct[-R], col = clr)
+points(d$yr[-R], d$pct[-R], col = clr, pch = 19)
+polygon(c(2016,2020,2020), c(d$pct[d$yr==2016],d$lo[d$yr==2020],d$hi[d$yr==2020]), border = "white", col = rgb(1,0,0, alpha = .25))
+lines(c(2020,2020), c(d$lo[d$yr==2020],d$hi[d$yr==2020]), col = "red", lwd = 1.5)
+points(c(2020,2020), c(d$lo[d$yr==2020],d$hi[d$yr==2020]), pch = "-", col = "red", lwd= 2)
+#dev.off()
+
+#pdf("../plots/mega-voters-20-20.pdf", height = 5, width = 7)
+#png("../plots/mega-voters-20-20.png", height = 350, width = 480)
+plot(d$yr, c(rep(0,(R-1)),250000000),  type="n", axes = FALSE, xlab = "", ylab = "Millions", main = "Voting-eligible vs. voting populations 1932-2020")
+axis(1, at = seq(1920,2020,10))
+axis(2, at = seq(0,250,50)*1000000, label = seq(0,250,50))
+abline(h = seq(0,250,50)*1000000, col = "gray")
+lines(d$yr, d$reg, col = "red")
+lines(d$yr, d$votes, col = "darkgreen")
+text(d$yr[d$yr==2012], d$reg[d$yr==2012], label = "Electorate", col = "red", pos = 3)
+text(d$yr[d$yr==1996], d$votes[d$yr==1996], label = "Voters", col = "darkgreen", pos = 1)
+## # add reg lines
+## sel <- which(d$yr >= 1932  &  d$yr <= 1968)
+## tmp <- lm(reg ~ yr, data = d, subset = sel)
+## tmp <- predict.lm(tmp, newdata = d[sel, c("yr","reg")])
+## lines(d$yr[sel], tmp, lty = 2)
+## ### tmp <- round( (tmp[2] - tmp[1]) / tmp[1] *100 / 4, 1)
+## ### tmp
+## ### text(x = d$yr[as.integer(median(sel))], d$reg[as.integer(median(sel))], label = expression(paste(Delta, "/yr = 1.7%", sep = "")), pos = 3, srt = 25)
+## #
+## sel <- which(d$yr >= 1968  &  d$yr <= 2020)
+## tmp <- lm(reg ~ yr, data = d, subset = sel)
+## tmp <- predict.lm(tmp, newdata = d[sel, c("yr","reg")])
+## lines(d$yr[sel], tmp, lty = 2)
+## ## tmp <- round( (tmp[2] - tmp[1]) / tmp[1] *100 / 4, 1)
+## ## tmp
+## ## text(x = d$yr[as.integer(median(sel))], d$reg[as.integer(median(sel))], label = paste(tmp, "%", sep = ""), pos = 3, srt = 25)
+## #
+## sel <- which(d$yr >= 1932  &  d$yr <= 1992)
+## tmp <- lm(votes ~ yr, data = d, subset = sel)
+## tmp <- predict.lm(tmp, newdata = d[sel, c("yr","votes")])
+## lines(d$yr[sel], tmp, lty = 2)
+## #
+## sel <- which(d$yr >= 1992  &  d$yr <= 2020)
+## tmp <- lm(votes ~ yr, data = d, subset = sel)
+## tmp <- predict.lm(tmp, newdata = d[sel, c("yr","votes")])
+## lines(d$yr[sel], tmp, lty = 2)
+#dev.off()
+
+
+
