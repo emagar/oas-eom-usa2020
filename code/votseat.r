@@ -12,17 +12,76 @@ d <- within(d, {
     })
 summary(d$res)
 
-y <- 2018
-plot(c(0,100),c(0,100), type = "n", main = paste(y, "(excluding single-seat states)"),
-     xlab = "Democratic % of two-party vote", ylab = "Democratic % seats" )
+# read 2020 district-level preliminary data
+d2 <- read.csv(file = "eua2020dfdf.csv", stringsAsFactors = FALSE)
+# aggregate state votes
+d2 <- within(d2, {
+    vdem <- ave(vdem, as.factor(st), FUN=sum, na.rm=FALSE);
+    vrep <- ave(vrep, as.factor(st), FUN=sum, na.rm=FALSE);
+    voth <- ave(voth, as.factor(st), FUN=sum, na.rm=FALSE)
+    });
+d2 <- d2[duplicated(d2$st)==FALSE,]
+d2$disn <- d2$nota <- NULL
+# shares
+d2 <- within(d2, {
+    vrepsh <- vrep*100/(vdem+vrep);
+    vdemsh <- vdem*100/(vdem+vrep);
+})
+# sort by state
+d <-   d[order( d$st),]
+d2 <- d2[order(d2$st),]
+# merge d2 into d
+sel <- which(d$yr==2020)
+d[sel, c("vdemsh","vrepsh")] <- d2[,c("vdemsh","vrepsh")]
+d[sel,]
+rm(d2)
+# sort by order
+d <- d[order(d$ord),]
+
+y <- 2012:2020
+#png(filename = "../plots/vs12-20.png")
+#pdf(file = "../plots/vs12-20.pdf")
+plot(c(0,100),c(0,100), type = "n", main = "Votes and seats since 2012 (black circumferences are 2020)", #main = "Votes and seats since 2012 (excluding single-seat states)"
+     xlab = "Democratic percentage of the state's two-party vote", ylab = "Democratic percentage of the state's seats" )
 abline(a = 0, b = 1, lty = 2)
 abline(v = seq(0,100,10), col = "gray")
 abline(h = seq(0,100,10), col = "gray")
 abline(v = 50, col = "gray60")
 abline(h = 50, col = "gray60")
-sel <- which(d$S>1 & d$yr==y)
-points(d$vdemsh[sel], d$sdemsh[sel], pch = 19, cex = (d$S[sel]/25)^0.5)
-text(d$vdemsh[sel], d$sdemsh[sel], labels = d$st[sel], cex = .67, pos = 3)
+#
+arrows(0,10,0,30, length = .05, col = "gray40")
+text(-2,20, labels = "Democrats more overrepresented", srt = 90, cex = .75, col = "gray40")
+arrows(100,90,100,70, length = .05, col = "gray40")
+text(102,80, labels = "Democrats more underrepresented", srt = 90, cex = .75, col = "gray40")
+arrows(40,100,20,100, length = .05, col = "gray40")
+text(30,102, labels = "More Republican state", srt = 0, cex = .75, col = "gray40")
+arrows(60,0,80,0, length = .05, col = "gray40")
+text(70,-2, labels = "More Democratic state", srt = 0, cex = .75, col = "gray40")
+#
+sel <- which(d$S>=1 & d$yr %in% y)
+#d$col <- rgb(0, 0, 175, alpha = 155, maxColorValue = 255)
+d$col <- ifelse(d$vdemsh > 50, rgb(0, 0, 175, alpha = 125, maxColorValue = 255), rgb(175, 0, 0, alpha = 125, maxColorValue = 255))
+#
+points(d$vdemsh[sel], d$sdemsh[sel], pch = 19, cex = (d$S[sel]/10)^0.5, col = d$col[sel]) # rgb(0, 0, 175, alpha = 155, maxColorValue = 255)
+#
+#text(d$vdemsh[sel], d$sdemsh[sel], labels = d$st[sel], cex = .67, pos = 3)
+#
+# mark 2020 circumference in black
+sel <- which(d$S>1 & d$yr == 2020)
+points(d$vdemsh[sel], d$sdemsh[sel], pch = 1, cex = (d$S[sel]/10)^0.5, lwd = 1.5)
+#
+polygon(x = c(85,85,103,103), y = c(33,7,7,33), col = "white")
+points(92, 20, pch = 1, cex = (1/10)^0.5)#, col = d$col[1])
+points(92, 15, pch = 1, cex = (10/10)^0.5)#, col = d$col[1])
+points(92, 10, pch = 1, cex = (50/10)^0.5)#, col = d$col[1])
+text(92, 20, labels = "1 seat", cex = .75, pos = 4)
+text(92, 15, labels = "10", cex = .75, pos = 4)
+text(92, 10, labels = "50", cex = .75, pos = 4)
+text(94, 31, labels = "State's", cex = .75)
+text(94, 28, labels = "Congressional", cex = .75)
+text(94, 25, labels = "delegation", cex = .75)
+#dev.off()
+
 
 y <- 2012
 #png(filename = paste("../plots/vs", y, ".png", sep = ""))
@@ -50,7 +109,7 @@ text(30,-52, labels = "More Democratic state", srt = 0, cex = .75, col = "red")
 arrows(60,-50,80,-50, length = .05, col = "red")
 text(70,-52, labels = "More Republican state", srt = 0, cex = .75, col = "red")
 #
-sel <- which(d$S>0 & d$yr==y)
+sel <- which(d$S>0 & d$yr %in% y)
 d$col <- rgb(0, 0, 175, alpha = 155, maxColorValue = 255)
 #d$col <- ifelse(d$vdemsh > 50, rgb(0, 0, 175, alpha = 155, maxColorValue = 255), rgb(175, 0, 0, alpha = 155, maxColorValue = 255))
 #
