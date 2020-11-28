@@ -39,9 +39,11 @@ rm(d2)
 d <- d[order(d$ord),]
 
 y <- 2012:2020
+#y <- 2012
 #png(filename = "../plots/vs12-20.png")
 #pdf(file = "../plots/vs12-20.pdf")
-plot(c(0,100),c(0,100), type = "n", main = "Votes and seats since 2012 (black circumferences are 2020)", #main = "Votes and seats since 2012 (excluding single-seat states)"
+png(filename = paste("../plots/vs", y, ".png", sep = ""))
+plot(c(0,100),c(0,100), type = "n", main = paste("Votes and seats in", y), #main = "Votes and seats since 2012 (black circumferences are 2020)", #main = "Votes and seats since 2012 (excluding single-seat states)"
      xlab = "Democratic percentage of the state's two-party vote", ylab = "Democratic percentage of the state's seats" )
 abline(a = 0, b = 1, lty = 2)
 abline(v = seq(0,100,10), col = "gray")
@@ -66,10 +68,10 @@ points(d$vdemsh[sel], d$sdemsh[sel], pch = 19, cex = (d$S[sel]/10)^0.5, col = d$
 #
 #text(d$vdemsh[sel], d$sdemsh[sel], labels = d$st[sel], cex = .67, pos = 3)
 #
-# mark 2020 circumference in black
-sel <- which(d$S>1 & d$yr == 2020)
-points(d$vdemsh[sel], d$sdemsh[sel], pch = 1, cex = (d$S[sel]/10)^0.5, lwd = 1.5)
-#
+## # mark 2020 circumference in black
+## sel <- which(d$S>1 & d$yr == 2020)
+## points(d$vdemsh[sel], d$sdemsh[sel], pch = 1, cex = (d$S[sel]/10)^0.5, lwd = 1.5)
+## #
 polygon(x = c(85,85,103,103), y = c(33,7,7,33), col = "white")
 points(92, 20, pch = 1, cex = (1/10)^0.5)#, col = d$col[1])
 points(92, 15, pch = 1, cex = (10/10)^0.5)#, col = d$col[1])
