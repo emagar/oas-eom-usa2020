@@ -1,51 +1,51 @@
-ord,state,st,govel,legel,g,h,s,type,mode,cong.seats.d,cong.seats.r,exp.reapportionment
-1,Alabama,AL,2022,2022,r,r,r,unif-r,leg-process,1,6,-1
-2,Alaska,AK,2022,2020,r,r,r,unif-r,no-redist,0,1,0
-3,Arizona,AZ,2022,2020,r,r,r,unif-r,indep-comm,5,4,1
-4,Arkansas,AR,2022,2020,r,r,r,unif-r,leg-process,0,4,0
-5,California,CA,2022,2020,d,d,d,unif-d,indep-comm,43,10,-0.5
-6,Colorado,CO,2022,2020,d,d,d,unif-d,indep-comm,4,3,1
-7,Connecticut,CT,2022,2020,d,d,d,unif-d,leg-process,5,0,0
-8,Delaware,DE,2020,2020,d,d,d,unif-d,no-redist,1,0,0
-9,Florida,FL,2022,2020,r,r,r,unif-r,leg-process,11,16,2
-10,Georgia,GA,2022,2020,r,r,r,unif-r,leg-process,6,8,0
-11,Hawaii,HI,2022,2020,d,d,d,unif-d,indep-comm,2,0,0
-12,Idaho,ID,2022,2020,r,r,r,unif-r,indep-comm,0,2,0
-13,Illinois,IL,2022,2020,d,d,d,unif-d,leg-process,13,5,-1
-14,Indiana,IN,2020,2020,r,r,r,unif-r,leg-process,2,7,0
-15,Iowa,IA,2022,2020,r,r,r,unif-r,leg-process,1,3,0
-16,Kansas,KS,2022,2020,d,r,r,dg,leg-process,1,3,0
-17,Kentucky,KY,2023,2020,d,r,r,dg,leg-process,1,5,0
-18,Louisiana,LA,2023,2023,d,r,r,dg,leg-process,1,5,0
-19,Maine,ME,2022,2020,d,d,d,unif-d,leg-process,0,2,0
-20,Maryland,MD,2022,2022,r,d,d,dg,leg-process,7,1,0
-21,Massachusetts,MA,2022,2020,r,d,d,dg,leg-process,9,0,0
-22,Michigan,MI,2022,2020,d,r,r,dg,indep-comm,7,7,-1
-23,Minnesota,MN,2022,2020,d,d,r,dg,leg-process,4,4,-0.5
-24,Mississippi,MS,2023,2023,r,r,r,unif-r,leg-process,1,3,0
-25,Missouri,MO,2020,2020,r,r,r,unif-r,leg-process,2,6,0
-26,Montana,MT,2020,2020,r,r,r,unif-r,no-redist,0,1,1
-27,Nebraska,NE,2022,2020,r,r,,unif-r,leg-process,2,1,0
-28,Nevada,NV,2022,2020,d,d,d,unif-d,leg-process,3,1,0
-29,New Hampshire,NH,2020,2020,r,r,r,unif-r,leg-process,0,2,0
-30,New Jersey,NJ,2021,2021,d,d,d,unif-d,leg-process,10,2,0
-31,New Mexico,NM,2022,2020,d,d,d,unif-d,leg-process,2,1,0
-32,New York,NY,2022,2020,d,d,d,unif-d,leg-process,19,8,-2
-33,North Carolina,NC,2020,2020,d,r,r,dg,leg-process,5,8,1
-34,North Dakota,ND,2020,2020,r,r,r,unif-r,no-redist,0,1,0
-35,Ohio,OH,2022,2020,r,r,r,unif-r,leg-process,4,12,-1
-36,Oklahoma,OK,2022,2020,r,r,r,unif-r,leg-process,0,5,0
-37,Oregon,OR,2022,2020,d,d,d,unif-d,leg-process,4,1,1
-38,Pennsylvania,PA,2022,2020,d,r,r,dg,leg-process,9,9,-1
-39,Rhode Island,RI,2022,2020,d,d,d,unif-d,leg-process,2,0,-1
-40,South Carolina,SC,2022,2020,r,r,r,unif-r,leg-process,1,6,0
-41,South Dakota,SD,2022,2020,r,r,r,unif-r,no-redist,0,1,0
-42,Tennessee,TN,2022,2020,r,r,r,unif-r,leg-process,2,7,0
-43,Texas,TX,2022,2020,r,r,r,unif-r,leg-process,13,23,3
-44,Utah,UT,2020,2020,r,r,r,unif-r,leg-process,0,4,0
-45,Vermont,VT,2020,2020,r,d,d,dg,no-redist,0,1,0
-46,Virginia,VA,2021,2021,d,d,d,unif-d,indep-comm,7,4,0
-47,Washington,WA,2020,2020,d,d,d,unif-d,indep-comm,7,3,0
-48,West Virginia,WV,2020,2020,r,r,r,unif-r,leg-process,0,3,-1
-49,Wisconsin,WI,2022,2020,d,r,r,dg,leg-process,3,5,0
-50,Wyoming,WY,2022,2020,r,r,r,unif-r,no-redist,0,1,0
+ord,state,st,govel,legel,g,h,s,type,mode,cong.seats.d,cong.seats.r,exp.reapportionment,type2011
+1,Alabama,AL,2022,2022,r,r,r,unif-r,leg-process-q12,1,6,-1,unif-r
+2,Alaska,AK,2022,2020,r,r,r,unif-r,no-redist,0,1,0,dg
+3,Arizona,AZ,2022,2020,r,r,r,unif-r,indep-comm,5,4,1,unif-r
+4,Arkansas,AR,2022,2020,r,r,r,unif-r,leg-process,0,4,0,unif-d
+5,California,CA,2022,2020,d,d,d,unif-d,indep-comm,43,10,-0.5,unif-d
+6,Colorado,CO,2022,2020,d,d,d,unif-d,indep-comm,4,3,1,dg
+7,Connecticut,CT,2022,2020,d,d,d,unif-d,leg-process-noveto,5,0,0,unif-d
+8,Delaware,DE,2020,2020,d,d,d,unif-d,no-redist,1,0,0,unif-d
+9,Florida,FL,2022,2020,r,r,r,unif-r,leg-process,11,16,2,unif-r
+10,Georgia,GA,2022,2020,r,r,r,unif-r,leg-process,6,8,0,unif-r
+11,Hawaii,HI,2022,2020,d,d,d,unif-d,indep-comm,2,0,0,unif-d
+12,Idaho,ID,2022,2020,r,r,r,unif-r,indep-comm,0,2,0,unif-r
+13,Illinois,IL,2022,2020,d,d,d,unif-d,leg-process,13,5,-1,unif-d
+14,Indiana,IN,2020,2020,r,r,r,unif-r,leg-process-q12,2,7,0,unif-r
+15,Iowa,IA,2022,2020,r,r,r,unif-r,leg-process,1,3,0,dg
+16,Kansas,KS,2022,2020,d,r,r,dg,leg-process,1,3,0,unif-r
+17,Kentucky,KY,2023,2020,d,r,r,dg,leg-process-q12,1,5,0,dg
+18,Louisiana,LA,2023,2023,d,r,r,dg,leg-process,1,5,0,unif-r
+19,Maine,ME,2022,2020,d,d,d,unif-d,leg-process,0,2,0,unif-r
+20,Maryland,MD,2022,2022,r,d,d,dg,leg-process,7,1,0,unif-d
+21,Massachusetts,MA,2022,2020,r,d,d,dg,leg-process,9,0,0,unif-d
+22,Michigan,MI,2022,2020,d,r,r,dg,indep-comm,7,7,-1,unif-r
+23,Minnesota,MN,2022,2020,d,d,r,dg,leg-process,4,4,-0.5,dg
+24,Mississippi,MS,2023,2023,r,r,r,unif-r,leg-process,1,3,0,dg
+25,Missouri,MO,2020,2020,r,r,r,unif-r,leg-process,2,6,0,dg
+26,Montana,MT,2020,2020,r,r,r,unif-r,no-redist,0,1,1,dg
+27,Nebraska,NE,2022,2020,r,r,,unif-r,leg-process,2,1,0,unif-r
+28,Nevada,NV,2022,2020,d,d,d,unif-d,leg-process,3,1,0,dg
+29,New Hampshire,NH,2020,2020,r,r,r,unif-r,leg-process,0,2,0,dg
+30,New Jersey,NJ,2021,2021,d,d,d,unif-d,leg-process,10,2,0,dg
+31,New Mexico,NM,2022,2020,d,d,d,unif-d,leg-process,2,1,0,dg
+32,New York,NY,2022,2020,d,d,d,unif-d,leg-process,19,8,-2,dg
+33,North Carolina,NC,2020,2020,d,r,r,unif-r,leg-process-noveto,5,8,1,unif-r
+34,North Dakota,ND,2020,2020,r,r,r,unif-r,no-redist,0,1,0,unif-r
+35,Ohio,OH,2022,2020,r,r,r,unif-r,leg-process,4,12,-1,unif-r
+36,Oklahoma,OK,2022,2020,r,r,r,unif-r,leg-process,0,5,0,unif-r
+37,Oregon,OR,2022,2020,d,d,d,unif-d,leg-process,4,1,1,dg
+38,Pennsylvania,PA,2022,2020,d,r,r,dg,leg-process,9,9,-1,unif-r
+39,Rhode Island,RI,2022,2020,d,d,d,unif-d,leg-process,2,0,-1,unif-r
+40,South Carolina,SC,2022,2020,r,r,r,unif-r,leg-process,1,6,0,unif-r
+41,South Dakota,SD,2022,2020,r,r,r,unif-r,no-redist,0,1,0,unif-r
+42,Tennessee,TN,2022,2020,r,r,r,unif-r,leg-process-q12,2,7,0,unif-r
+43,Texas,TX,2022,2020,r,r,r,unif-r,leg-process,13,23,3,unif-r
+44,Utah,UT,2020,2020,r,r,r,unif-r,leg-process,0,4,0,unif-r
+45,Vermont,VT,2020,2020,r,d,d,dg,no-redist,0,1,0,unif-d
+46,Virginia,VA,2021,2021,d,d,d,unif-d,indep-comm,7,4,0,dg
+47,Washington,WA,2020,2020,d,d,d,unif-d,indep-comm,7,3,0,unif-d
+48,West Virginia,WV,2020,2020,r,r,r,unif-r,leg-process-q12,0,3,-1,unif-d
+49,Wisconsin,WI,2022,2020,d,r,r,dg,leg-process,3,5,0,unif-r
+50,Wyoming,WY,2022,2020,r,r,r,unif-r,no-redist,0,1,0,unif-r

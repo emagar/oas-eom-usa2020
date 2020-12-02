@@ -39,11 +39,10 @@ rm(d2)
 d <- d[order(d$ord),]
 
 y <- 2012:2020
-#y <- 2012
 #png(filename = "../plots/vs12-20.png")
 #pdf(file = "../plots/vs12-20.pdf")
-png(filename = paste("../plots/vs", y, ".png", sep = ""))
-plot(c(0,100),c(0,100), type = "n", main = paste("Votes and seats in", y), #main = "Votes and seats since 2012 (black circumferences are 2020)", #main = "Votes and seats since 2012 (excluding single-seat states)"
+#pdf(file = paste("../plots/vs", y, ".pdf", sep = ""))
+plot(c(0,100),c(0,100), type = "n", main = "Votes and seats since 2012 (black circumferences are 2020)", #main = "Votes and seats since 2012 (excluding single-seat states)"
      xlab = "Democratic percentage of the state's two-party vote", ylab = "Democratic percentage of the state's seats" )
 abline(a = 0, b = 1, lty = 2)
 abline(v = seq(0,100,10), col = "gray")
@@ -66,12 +65,16 @@ d$col <- ifelse(d$vdemsh > 50, rgb(0, 0, 175, alpha = 125, maxColorValue = 255),
 #
 points(d$vdemsh[sel], d$sdemsh[sel], pch = 19, cex = (d$S[sel]/10)^0.5, col = d$col[sel]) # rgb(0, 0, 175, alpha = 155, maxColorValue = 255)
 #
+# add state names
+#sel <- which(d$st %in% c("WI") & d$yr==2020)
+#sel <- which(d$st %in% c("AZ","MI","NV","NC","NJ","NY","PA","WI"))
+#sel <- which(d$S>=1 & d$yr %in% y)
 #text(d$vdemsh[sel], d$sdemsh[sel], labels = d$st[sel], cex = .67, pos = 3)
 #
-## # mark 2020 circumference in black
-## sel <- which(d$S>1 & d$yr == 2020)
-## points(d$vdemsh[sel], d$sdemsh[sel], pch = 1, cex = (d$S[sel]/10)^0.5, lwd = 1.5)
-## #
+# mark 2020 circumference in black
+sel <- which(d$S>=1 & d$yr == 2020)
+points(d$vdemsh[sel], d$sdemsh[sel], pch = 1, cex = (d$S[sel]/10)^0.5, lwd = 1.5)
+#
 polygon(x = c(85,85,103,103), y = c(33,7,7,33), col = "white")
 points(92, 20, pch = 1, cex = (1/10)^0.5)#, col = d$col[1])
 points(92, 15, pch = 1, cex = (10/10)^0.5)#, col = d$col[1])
@@ -81,9 +84,39 @@ text(92, 15, labels = "10", cex = .75, pos = 4)
 text(92, 10, labels = "50", cex = .75, pos = 4)
 text(94, 31, labels = "State's", cex = .75)
 text(94, 28, labels = "Congressional", cex = .75)
-text(94, 25, labels = "delegation", cex = .75)
+text(94, 25, labels = "apportionment", cex = .75)
+#
+# Add labels to select points
+## # click in the plot where arrow should be drawn for state label, see also function identify()
+## p <- locator(2)
+## p
+## xx
+p <- list(x=c(69.23400, 67.66867), y=c(64.61253, 65.48611))
+lines(p$x, p$y)
+text(p$x[1], p$y[1], "NY", cex = .67, pos = 4, offset = 0.25)
+p <- list(x=c(53.38503, 52.01536), y=c(25.51963, 26.61161))
+lines(p$x, p$y)
+text(p$x[1], p$y[1], "PA", cex = .67, pos = 4, offset = 0.25)
+p <- list(x=c(54.16769, 52.21103), y=c(30.97954, 30.76114))
+lines(p$x, p$y)
+text(p$x[1], p$y[1], "NC", cex = .67, pos = 4, offset = 0.25)
+p <- list(x=c(52.21103, 50.25437), y=c(21.15171, 22.46209))
+lines(p$x, p$y)
+text(p$x[1], p$y[1], "NC", cex = .67, pos = 4, offset = 0.25)
+p <- list(x=c(55.537, 53.581), y=c(34, 34.911))
+lines(p$x, p$y)
+text(p$x[1], p$y[1], "MI", cex = .67, pos = 4, offset = 0.25)
+p <- list(x=c(57.885, 55.74), y=c(38.405, 37.531))
+lines(p$x, p$y)
+text(p$x[1], p$y[1], "WI", cex = .67, pos = 4, offset = 0.25)
+p <- list(x=c(47.39, 49.55), y=c(75.72, 75.19))
+lines(p$x, p$y)
+text(p$x[1], p$y[1], "NV", cex = .67, pos = 2, offset = 0.25)
 #dev.off()
 
+sel <- which(d$st=="NY"); d[sel,]
+x
+    
 
 y <- 2012
 #png(filename = paste("../plots/vs", y, ".png", sep = ""))
