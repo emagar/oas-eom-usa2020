@@ -1,0 +1,63 @@
+A standard assessment of district boundary maps is through votes and seats plots. Such diagrams capture nicely how congressional district boundaries convert votes into seats by systematically comparing the vote percentage that the Democratic party received and the share of House seats it won across states. (By virtue of the two-party system, Republicans are the mirror image of Democrats.) 
+
+Figure 1 is the votes and seats plot for 2012-2020, the full period during which electoral boundary maps remained unchanged. Each point in the plot is one state in a given year. States appears five times in the diagram, once for every congressional election conducted in the period (black circumferences identify the 2020 races). Point size increased with the number of seats apportioned to the state in Congress. So California, with 53 seats in the House, has the largest points (visible in the upper right quadrant), whereas Montana, with a single seat, has tiny points (situated in the bottom line). And points are colored blue for state-years where Democrats won a vote majority, red when Republicans did. 
+
+The dotted line shows what a seat distribution that is perfectly proportional to votes received would look like. Even if there are exceptions, such as New York in 2016 when Democrats won 67 percent of seats with 66 percent of votes, no one expects the distribution in the United States to approximate the dotted line. A seat bonus to the majority in simple plurality in single-member districts is well documented. fn Edward R. Tufte (1973). The relationship between seats and votes in two-party systems. American Political Science Review 67:540-554. Rein Taagepera (1973). Seats and Votes: A generalization of the cube law of elections. Social Science Research 2(3):257--75. 
+
+What is anomalous is the group of blue points below the dotted line. Democrats  in these state-years were awarded between 28 and 38 percent of seats despite receiving between 51 and 55 percent of votes---i.e., cases where Republicans were substantially overrepresented, receiving seat majorities in spite of their minority status. Cases in this group include Pennsylvania, North Carolina, Michigan, and Wisconsin.
+
+Adding the large red group that stands just across the 50-percent vertical line reveals the advantage that Republicans enjoy votes-to-seats conversion in congressional elections. Although Democrats also enjoy cases in this category---Nevada, for instance---they are far fewer and with a tiny fraction of seats apportioned. 
+
+The role of gerrymandering
+
+Understanding distorsions in votes to seats conversion passes through the concept of vote wasting. A party's votes are wasted when they are not being converted into seats. One way the problem arises is when the party wins a seat by too large a margin and those extra votes could help elect another candidate if they could be counted in her district. Thus, from the party's perspective, they are wasted. The problem also arises when the party's support is spread too thin across several districts, amounting to no victories unless they could somehow be grouped in a single constituency. Vote wasting leads parties to fewer seats than they potentially could have won. 
+
+Vote wasting can be intentional, accidental, or both. fn Bernard Grofman, William Koetzle, and Thomas Brunell (1997). An Integrated Perspective on the Three Potential Sources of Partisan Bias: Malapportionment, Turnout Differences, and the Geographic Distribution of Party Vote Shares, Electoral Studies 16(4). It is intentional through partisan gerrymandering, by manipulating district lines in order to target vote wasting towards the opposition, denying it of seats it could otherwise have won. It is accidental when it arises by where voters live or by different turnout propensities between the parties. 
+
+Geographic concentration of voters breeds vote wasting not attributable to partisan agency. People who think alike tend to live together. Democrats are often overwhelmingly concentrated in metropolitan downtown areas, whereas Republicans have enclaves in suburbia and in rural dwellings. fn See https://projects.fivethirtyeight.com/republicans-democrats-cities/ These patterns inevitably distort representation when drawing contiguous electoral boundaries. In cities, Democrats usually overwhelm Republican enclaves, winning inner-city seats by enormous margins. In the suburbs, and especially the rural areas, that balance reverts. 
+
+This source of bias in representation is not attributable to partisan agency, but driven by wider social and economic forces. The same can be said of different turnout propensities between voters of the parties, another source of bias.  
+
+In the end, separating how much gerrymandering and other factors that occur simultaneously each contribute against fair representation is far from straightforward.
+
+This is not to say that a significant reduction or removal of political manipulation of electoral boundaries is not desirable. 
+
+But it serves as a reminder that even a truly independent map maker will find it near impossible to remove every source of bias in electoral boundary maps in first past the post systems.  
+
+
+
+One one hand, it is well established that three forces (including gerrymandering) operate to produce bias. On the other hand, these forces occur simultaneously and, therefore, determining how much is due to gerrymandering alone poses a fabulous obstacle.
+
+The three forces are the following: fn 1
+
+
+
+2. Turnout differentials
+
+3. Gerrymandering
+
+
+
+
+
+
+
+
+
+Some contend that maps intentionally distort representation. Others retort that other forces, such as geographical features and turnout differences between the parties, also plays a large role. A formidable obstacle for reform is that separating these effects is far from straightforward.1 
+
+Key question is what explains this phenomenon. Mix of geographic concentration of voters (Dems tend to live in urban centers, Reps in suburban and rural), gerrymandering, and turnout differentials between the parties. This causes vote wasting
+
+
+----
+
+Republicans here have a majority status in the electorate 
+
+
+A common 
+
+Figure 1 shows how votes translated into seats in the last five congressional elections. Each point in the plot reports whether the Republican party received more or less seats than the votes it won in the state (and Democrats are the mirror image). Bigger points correspond to states sending larger delegations to the House of Representatives (states do so in proportion to their population). Republicans in states above the red line were overrepresented – they received a bigger percentage of the state’s delegation to the House than the percentage of votes they won across the state’s congressional races. To the contrary, states below the red line saw Republicans underrepresented, Democrats overrepresented. 
+
+Positions along the horizontal axis show how strong a showing Republicans had in the state that year. It is plain in the plots that the party with the most votes statewide tends to get more seats than it deserves – but, critically, not always. This “winner’s bonus” was routinely granted to the losing party in between three and eight states, depending on the year. Cases where a tiny vote margin translates into more than 10 percent advantage are also quite frequent. 
+
+

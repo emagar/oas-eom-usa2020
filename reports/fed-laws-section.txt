@@ -1,0 +1,34 @@
+4. Legal framework
+
+The federal-level legal structure of boundary delimitation is remarkably skim. One constitutional article and two federal statutes bear direct relation to redistricting. 
+
+4.1. Constitution
+
+Article 1, Section 4. of the United States Constitution reads thus: 
+
+The Times, Places and Manner of holding Elections for Senators and Representatives, shall be prescribed in each State by the Legislature thereof; but the Congress may at any time by Law make or alter such Regulations, except as to the Places of chusing Senators.
+
+The Congress shall assemble at least once in every Year, and such Meeting shall be on the first Monday in December, unless they shall by Law appoint a different Day.
+
+The U.S. Constitution grants authority to conduct federal elections to the state assemblies. While not explicitly expressed, this includes boundary delimitation.
+
+
+4.2. Federal statutes
+
+Federal law relevant to boundary delimitation includes the Reapportionment Act of 1929 and the Voting Rights Act of 1965. 
+
+The Reapportionment Act caps the size of the House of Representatives at 435 seats and mandates that districts must be distributed according to state populations, after each decennial census. Congressional apportionment and redistricting last took place in 2011, when the district maps that were used for the 2020 House of Representatives elections (and in 2012, 2014, 2016, and 2018) were drawn. Boundary delimitations will be again re-drawn next year for the 2022 midterm elections. 
+
+Unlike the statute of 1911 it replaced, the 1929 Reapportionment Act makes no mention of requirements that congressional districts be contiguous, compact, and equally populated, leaving ample discretion to states when drawing boundary deliminations. fn See https://en.wikipedia.org/wiki/Reapportionment_Act_of_1929#:~:text=The%20Reapportionment%20Act%20of%201929,Representatives%20according%20to%20each%20census.
+
+Section 5 of the Voting Rights Act creates a preclearance requirement for certain states or portions within them. The implication is that states cannot implement a new district map in those jurisdictions unless granted approval by the United States Attorney General or the United States District Court for the District of Columbia that the change does not discriminate against protected minorities. fn See Justin Levitt and Erika Wood (2010) A Citizen's Guide to Redistricting, New York: Brennan Center for Justice-NYU School of Law. The list of jurisdictions or "coverage formula" has changed since 1965. In 2010 the coverage formula included the full states of Alabama, Alaska, Arizona, Georgia, Louisiana, Mississipi, South Carolina, Texas, and Virginia, and areas with concentrated minorities in California, Florida, Michigan, New Hampshire, New York, North Carolina, and South Dakota. Figure xx has maps of the coverage formula. 
+
+Figure xx
+Source: Levitt and Wood 2010, see fn xx. 
+
+In Shelby County v. Holder (2013), the United States Supreme Court struck down the coverage formula as unconstitutional, reasoning that conditions that led to systematic voting discrimination in 1965 have changed fundamentally. fn See https://en.wikipedia.org/wiki/Voting_Rights_Act_of_1965. Without a coverage formula, Section 5 becomes unenforceable in 2021.
+
+
+
+
+
